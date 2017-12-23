@@ -1,0 +1,48 @@
+header{
+	position: relative;
+	.header-nav{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		min-height: 100px;
+		padding: 0;
+		.navbar-brand{
+			width: rem(160);
+		}
+		.navbar-nav{
+			.nav-item{
+				margin-right: rem(20);
+				.nav-link{
+					color: $white;
+					text-transform: capitalize;
+					position: relative;
+					z-index: 9;
+					&:after{
+						width: 0;
+						height: 2px;
+						background-color: $white;
+						left: 0;
+						content: '';
+						position: absolute;
+						top: 20px;
+						transition: all .5s;
+						opacity: .8;
+					}
+					&:hover{
+						&:after{
+							width: 100%;
+						}
+					}
+				}
+				// &.active{
+				// 	.nav-link{
+				// 		&:after{
+				// 			height: 100%;
+				// 		}
+				// 	}
+				// }
+			}
+		}
+	}
+}

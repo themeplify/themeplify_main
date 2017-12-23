@@ -1,0 +1,52 @@
+html {
+    font-size:16px;
+    font-family: $montserrat;
+}
+body{
+	font-family: $montserrat;
+}
+img{
+	max-width: 100%;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+// common classes
+.section-padding{
+	padding: rem(100) 0;
+}
+.bg-gray-200{
+	background-color: $gray-200;
+}
+.bg-orange{
+	background-color: $orange;
+	color: $white;
+}
+.section-sub-title{
+	font-size: rem(16);
+	color: $gray-700;
+	margin-bottom: rem(50) !important;
+}
+p{
+	&:last-of-type{
+		margin-bottom: 0;
+	}
+}
+
+
+.bg-gray-700{
+	background-color: $gray-700;
+}
+.common-trasition{
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	-moz-transition: all .5s;
+}
+.gray-backgound{
+	background-color: $gray-100;
+}

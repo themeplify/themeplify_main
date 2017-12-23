@@ -1,0 +1,19 @@
+.banner-content-holder{
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 100%;
+	.banner-content{
+		text-align: center;
+		display: table;
+		margin: 0 auto;
+		.banner-logo{
+			margin-bottom: rem(25);
+		}
+		p{
+		font-size: rem(20);
+	    font-weight: $roboto-light;
+	    line-height: 35px;
+		}
+	}
+}
