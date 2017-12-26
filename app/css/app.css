@@ -8937,6 +8937,21 @@ footer {
     .who-we-are .who-we-are-content .abt-sign {
       margin-top: 2.5rem; }
 
+.demo-themes-holder ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .demo-themes-holder ul li {
+    display: inline-block;
+    width: 30%;
+    margin: 0px 15px;
+    margin-bottom: 50px;
+    text-align: center; }
+    .demo-themes-holder ul li img {
+      margin-bottom: 10px; }
+
 .parallax-section {
   background: url(../images/parallax.jpg);
   position: relative;
