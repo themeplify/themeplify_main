@@ -18,6 +18,7 @@ header{
 					text-transform: capitalize;
 					position: relative;
 					z-index: 9;
+					font-size: rem(15);
 					&:after{
 						width: 0;
 						height: 2px;
@@ -25,9 +26,8 @@ header{
 						left: 0;
 						content: '';
 						position: absolute;
-						top: 20px;
+						top: 19px;
 						transition: all .5s;
-						opacity: .8;
 					}
 					&:hover{
 						&:after{

@@ -25,9 +25,14 @@
 		li{
 			display: inline-block;
 			width: 30%;
+			vertical-align: top;
 			margin: 0px 15px;
 			margin-bottom: 50px;
 			text-align: center;
+			@extend .common-trasition;
+			&:hover{
+				margin-top: -10px;
+			}
 			img{
 				margin-bottom: 10px;
 			}

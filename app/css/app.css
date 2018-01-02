@@ -8762,7 +8762,7 @@ p:last-of-type {
 .bg-gray-700 {
   background-color: #495057; }
 
-.common-trasition {
+.common-trasition, .demo-themes-holder ul li {
   transition: all .5s;
   -webkit-transition: all .5s;
   -ms-transition: all .5s;
@@ -8862,7 +8862,8 @@ header {
         color: #fff;
         text-transform: capitalize;
         position: relative;
-        z-index: 9; }
+        z-index: 9;
+        font-size: 0.9375rem; }
         header .header-nav .navbar-nav .nav-item .nav-link:after {
           width: 0;
           height: 2px;
@@ -8870,58 +8871,16 @@ header {
           left: 0;
           content: '';
           position: absolute;
-          top: 20px;
-          transition: all .5s;
-          opacity: .8; }
+          top: 19px;
+          transition: all .5s; }
         header .header-nav .navbar-nav .nav-item .nav-link:hover:after {
           width: 100%; }
 
 footer {
-  background-attachment: fixed; }
-  footer .footer-logo {
-    margin-bottom: 1.25rem; }
-  footer .social-icons ul li {
-    display: inline-block;
-    margin-right: 0.625rem; }
-    footer .social-icons ul li a {
-      height: 1.875rem;
-      width: 1.875rem;
-      display: block;
-      color: #212529;
-      border-radius: 50%;
-      background-color: #fff;
-      text-align: center;
-      line-height: 1.875rem; }
-  footer .bottom-footer {
-    border-top: 1px solid #e9ecef;
-    padding: 30px 0px; }
-
-.what-we-offer {
-  position: relative; }
-  .what-we-offer .offer-side-image {
-    position: absolute; }
-    .what-we-offer .offer-side-image.keyboard-img {
-      right: 0;
-      top: 0; }
-    .what-we-offer .offer-side-image.pen-img {
-      top: 50px;
-      left: 50px; }
-    .what-we-offer .offer-side-image.cup-img {
-      bottom: 0px;
-      left: 50px; }
-  .what-we-offer .offer-box-holder {
-    position: relative;
-    z-index: 9; }
-    .what-we-offer .offer-box-holder .each-offer-box {
-      padding: 4.0625rem 2.1875rem;
-      background-color: #fff;
-      margin-bottom: 30px;
-      text-align: center; }
-      .what-we-offer .offer-box-holder .each-offer-box .offer-icon {
-        font-size: 2.8125rem;
-        color: #fd7e14;
-        display: inline-block;
-        margin-bottom: 0.9375rem; }
+  background: url(../images/footer.png);
+  padding: 100px 0px;
+  background-size: cover;
+  min-height: 430px; }
 
 .who-we-are {
   position: relative;
@@ -8946,11 +8905,47 @@ footer {
   .demo-themes-holder ul li {
     display: inline-block;
     width: 30%;
+    vertical-align: top;
     margin: 0px 15px;
     margin-bottom: 50px;
     text-align: center; }
+    .demo-themes-holder ul li:hover {
+      margin-top: -10px; }
     .demo-themes-holder ul li img {
       margin-bottom: 10px; }
+
+.variation {
+  text-align: center;
+  padding: 20px 25px;
+  border-right: 1px solid #d6d6d6; }
+  .variation:last-child {
+    border: 0px; }
+  .variation:nth-child(4n) {
+    border: 0px; }
+  .variation span.lnr {
+    font-size: 1.875rem; }
+  .variation span.numbers {
+    background: #ff634f;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ff634f 0%, #fb8879 41%, #fb35ca 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ff634f 0%, #fb8879 41%, #fb35ca 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ff634f 0%, #fb8879 41%, #fb35ca 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff634f', endColorstr='#fb35ca',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 4px; }
+  .variation h4 {
+    margin-bottom: 0px;
+    line-height: 1.875rem;
+    margin-top: 0.9375rem; }
+
+.modal-variation-img-holder {
+  margin-top: 60px; }
 
 .parallax-section {
   background: url(../images/parallax.jpg);
@@ -9018,57 +9013,28 @@ input.form-control {
   margin-right: 0.9375rem;
   text-transform: capitalize;
   min-width: 7.5rem;
-  border-radius: 0px; }
-  .btn.btn-solid-orange {
-    background-color: #fd7e14;
-    border: 1px solid transparent;
-    text-transform: capitalize;
-    color: #fff; }
-    .btn.btn-solid-orange:hover {
-      background-color: transparent;
-      border: 1px solid #fd7e14;
-      color: #fd7e14; }
-    .btn.btn-solid-orange.active {
-      background-color: transparent;
-      border: 1px solid #fd7e14;
-      color: #fd7e14; }
-  .btn.btn-solid-black {
-    background-color: #000;
-    border: 1px solid transparent;
-    text-transform: capitalize;
-    color: #fff; }
-    .btn.btn-solid-black:hover {
-      background-color: transparent;
-      border: 1px solid #000;
-      color: #000; }
-    .btn.btn-solid-black.active {
-      background-color: transparent;
-      border: 1px solid #000;
-      color: #000; }
-  .btn.btn-outline-orange {
-    border-color: #fd7e14;
-    color: #fd7e14;
-    background-color: transparent; }
-    .btn.btn-outline-orange:hover {
-      border-color: transparent;
-      background-color: #fd7e14;
-      color: #fff; }
-    .btn.btn-outline-orange.active {
-      border-color: transparent;
-      background-color: #fd7e14;
-      color: #fff; }
-  .btn.btn-outline-black {
-    border-color: #000;
-    color: #000;
-    background-color: transparent; }
-    .btn.btn-outline-black:hover {
-      border-color: transparent;
-      background-color: #000;
-      color: #fff; }
-    .btn.btn-outline-black.active {
-      border-color: transparent;
-      background-color: #000;
-      color: #fff; }
+  font-size: 0.9375rem;
+  border-radius: 3.125rem; }
+  .btn.btn-primary {
+    color: #333;
+    border-color: #f8e438;
+    background-color: #f8e438; }
+    .btn.btn-primary:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff; }
+  .btn.orange-btn {
+    background: #ff634f;
+    color: #fff;
+    padding: 10px 35px; }
+    .btn.orange-btn:hover {
+      background-color: #212529; }
+  .btn.pink-btn {
+    background-color: #ff437d;
+    color: #fff;
+    padding: 10px 35px; }
+    .btn.pink-btn:hover {
+      background-color: #212529; }
 
 .banner-content-holder {
   position: absolute;
