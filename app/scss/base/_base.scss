@@ -17,6 +17,12 @@ ul{
 // common classes
 .section-padding{
 	padding: rem(100) 0;
+	@include media-breakpoint-down(md){
+		padding: 50px 0;
+	}
+	@include media-breakpoint-down(xs){
+		padding: 30px 0;
+	}
 }
 .bg-gray-200{
 	background-color: $gray-200;

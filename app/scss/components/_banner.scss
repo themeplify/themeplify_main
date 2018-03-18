@@ -1,12 +1,30 @@
 .banner-content-holder{
 	position: absolute;
-	top: 30%;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	left: 0;
 	width: 100%;
+	margin-top: -70px;
+	@include media-breakpoint-down(sm){
+		margin-top: -50px;
+	}
+	@include media-breakpoint-down(xs){
+		margin-top: -15px;
+	}
 	.banner-content{
 		text-align: center;
 		display: table;
 		margin: 0 auto;
+		img{
+			width: 200px;
+			@include media-breakpoint-down(sm){
+				width: 90px;
+			}
+		}
 		.banner-logo{
 			margin-bottom: rem(25);
 		}
@@ -14,6 +32,20 @@
 		font-size: rem(20);
 	    font-weight: $roboto-light;
 	    line-height: 35px;
+		    @include media-breakpoint-down(md){
+		    	font-size: 17px;
+		    	line-height: 25px;
+		    }
+		     @include media-breakpoint-down(sm){
+		    	font-size: 15px;
+		    	line-height: 20px;
+		    	max-width: 70%;
+		    	display: table;
+		    	margin: 0 auto;
+		     }
+		     @include media-breakpoint-down(xs){
+		     	display: none;
+		     }
 		}
 	}
 }

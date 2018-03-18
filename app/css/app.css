@@ -8743,6 +8743,12 @@ ul {
 
 .section-padding {
   padding: 6.25rem 0; }
+  @media (max-width: 991px) {
+    .section-padding {
+      padding: 50px 0; } }
+  @media (max-width: 575px) {
+    .section-padding {
+      padding: 30px 0; } }
 
 .bg-gray-200 {
   background-color: #e9ecef; }
@@ -8845,8 +8851,18 @@ p, .body-copy {
   font-size: 0.875rem;
   margin-bottom: 0.0625rem; }
 
+@media (max-width: 991px) {
+  h2 {
+    font-size: 35px; } }
+
+@media (max-width: 575px) {
+  h2 {
+    font-size: 20px;
+    line-height: 22px; } }
+
 header {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   header .header-nav {
     position: absolute;
     width: 100%;
@@ -8878,9 +8894,13 @@ header {
 
 footer {
   background: url(../images/footer.png);
-  padding: 100px 0px;
-  background-size: cover;
-  min-height: 430px; }
+  background-size: cover; }
+  footer h3 {
+    color: #fff;
+    margin-top: 200px; }
+    @media (max-width: 767px) {
+      footer h3 {
+        margin-top: 100px; } }
 
 .who-we-are {
   position: relative;
@@ -8902,22 +8922,35 @@ footer {
   font-size: 0;
   margin-right: -15px;
   margin-left: -15px; }
+  @media (max-width: 575px) {
+    .demo-themes-holder ul {
+      margin: 0 20px; } }
   .demo-themes-holder ul li {
     display: inline-block;
     width: 30%;
     vertical-align: top;
     margin: 0px 15px;
     margin-bottom: 50px;
-    text-align: center; }
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.33);
+    -ms-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.33);
+    -o-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.33); }
+    @media (max-width: 575px) {
+      .demo-themes-holder ul li {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px; } }
+    .demo-themes-holder ul li p {
+      padding-bottom: 10px; }
     .demo-themes-holder ul li:hover {
       margin-top: -10px; }
     .demo-themes-holder ul li img {
       margin-bottom: 10px; }
 
 .variation {
-  text-align: center;
-  padding: 20px 25px;
-  border-right: 1px solid #d6d6d6; }
+  padding-bottom: 25px; }
   .variation:last-child {
     border: 0px; }
   .variation:nth-child(4n) {
@@ -8938,7 +8971,12 @@ footer {
     color: #fff;
     font-weight: 600;
     padding: 1px 6px;
-    border-radius: 4px; }
+    width: 45px;
+    height: 45px;
+    line-height: 42px;
+    border-radius: 50%;
+    display: table;
+    text-align: center; }
   .variation h4 {
     margin-bottom: 0px;
     line-height: 1.875rem;
@@ -8946,6 +8984,30 @@ footer {
 
 .modal-variation-img-holder {
   margin-top: 60px; }
+
+.feature-holder1 {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: left top;
+  background-attachment: fixed;
+  position: relative; }
+  @media (max-width: 767px) {
+    .feature-holder1:after {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 3; } }
+  .feature-holder1 .container {
+    position: relative;
+    z-index: 5; }
+
+@include-media-breakpoint-down (xs) {
+  .feature-holder .pink-btn {
+    margin-top: 20px; } }
 
 .parallax-section {
   background: url(../images/parallax.jpg);
@@ -9038,19 +9100,50 @@ input.form-control {
 
 .banner-content-holder {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   left: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: -70px; }
+  @media (max-width: 767px) {
+    .banner-content-holder {
+      margin-top: -50px; } }
+  @media (max-width: 575px) {
+    .banner-content-holder {
+      margin-top: -15px; } }
   .banner-content-holder .banner-content {
     text-align: center;
     display: table;
     margin: 0 auto; }
+    .banner-content-holder .banner-content img {
+      width: 200px; }
+      @media (max-width: 767px) {
+        .banner-content-holder .banner-content img {
+          width: 90px; } }
     .banner-content-holder .banner-content .banner-logo {
       margin-bottom: 1.5625rem; }
     .banner-content-holder .banner-content p {
       font-size: 1.25rem;
       font-weight: 300;
       line-height: 35px; }
+      @media (max-width: 991px) {
+        .banner-content-holder .banner-content p {
+          font-size: 17px;
+          line-height: 25px; } }
+      @media (max-width: 767px) {
+        .banner-content-holder .banner-content p {
+          font-size: 15px;
+          line-height: 20px;
+          max-width: 70%;
+          display: table;
+          margin: 0 auto; } }
+      @media (max-width: 575px) {
+        .banner-content-holder .banner-content p {
+          display: none; } }
 
 .style-guide header {
   background: #24d3f9;
