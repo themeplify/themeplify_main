@@ -35,6 +35,12 @@ ul{
 	font-size: rem(16);
 	color: $gray-700;
 	margin-bottom: rem(50) !important;
+	@include media-breakpoint-down(md){
+		margin-bottom: rem(30);
+	}
+	@include media-breakpoint-down(sm){
+		margin-bottom: rem(20);
+	}
 }
 p{
 	&:last-of-type{

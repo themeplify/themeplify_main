@@ -8761,6 +8761,12 @@ ul {
   font-size: 1rem;
   color: #495057;
   margin-bottom: 3.125rem !important; }
+  @media (max-width: 991px) {
+    .section-sub-title {
+      margin-bottom: 1.875rem; } }
+  @media (max-width: 767px) {
+    .section-sub-title {
+      margin-bottom: 1.25rem; } }
 
 p:last-of-type {
   margin-bottom: 0; }
@@ -9097,6 +9103,9 @@ input.form-control {
     padding: 10px 35px; }
     .btn.pink-btn:hover {
       background-color: #212529; }
+
+.feature-holder .btn {
+  margin-bottom: 20px; }
 
 .banner-content-holder {
   position: absolute;
